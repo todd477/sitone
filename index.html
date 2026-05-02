@@ -7,41 +7,39 @@
     <style>
         body {background-color: powderblue;}
         h2{color:red; font-size:80px; text-align: center;}
-      </style>
+    </style>
 
-          <script>
+    <script>
+        function toggleImmagine() {
+            let img = document.getElementById("img1");
 
-            function toggleImmagine() {
-           let img = document.getElementById("img1");
-
-             if (img.style.display === "none") {
-               img.style.display = "block";   // mostra
-               } else {
-                  img.style.display = "none";   //nascondi 
-                 }
-  }
-
-
-            </script>
+            if (img.style.display === "none") {
+                img.style.display = "block";   // mostra
+            } else {
+                img.style.display = "none";   //nascondi 
+            }
+        }
+    </script>
 </head>
 <body>
 
     <h1 style="text-align: center;">benvenuti </h1>
-      <h2>CIAO</h2>
+    <h2>CIAO</h2>
+    <hr>  //crea una linea orizzontale
+    <h3 title="parola magica"> metti il cursore su questo titolo per vedre una parola magica</h3>
     
-  <button onclick="toggleImmagine()">clicca per immagine !!!!</button>  
+    <button onclick="toggleImmagine()">clicca per immagine !!!!</button>  
     
-        <img id="img1" src="immagine1.png" alt="Immagine" width="300" style="display:none;">
+    <img id="img1" src="immagine1.png" alt="Immagine" width="300" style="display:none;">
 
+    <form action="risposta.txt">
+        inserisci quanto ti è piaciuta l'immagine : <input type="text" name="fname"><br><br>
+        
+        <button type="submit">Manda</button>
+        <button type="reset">Riscrivi</button>
+    </form>
 
-
-<form action="risposta.txt">
-    inserisci quanto ti è piaciuta l'immagine : <input type="text" name="fname"><br><br>
-  
-    <button type="submit">Manda</button>
-    <button type="reset">Riscrivi</button>
-  </form>
-    
+    <a href="https://todd477.github.io/sitone/">Visita il miglior sito del mondo</a>
 
 </body>
 </html>
