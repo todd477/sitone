@@ -6,23 +6,34 @@
 
     <style>
         body {background-color: powderblue;}
-
+        h2{color:red; font-size:80px; text-align: center;}
       </style>
+
+          <script>
+
+            function toggleImmagine() {
+           let img = document.getElementById("img1");
+
+             if (img.style.display === "none") {
+               img.style.display = "block";   // mostra
+               } else {
+                  img.style.display = "none";   //nascondi 
+                 }
+  }
+
+
+            </script>
 </head>
 <body>
 
-    <h1>benvenuti </h1>
-    <h1 style="color:red; font-size:80px;">CIAO</h1>
+    <h1 style="text-align: center;">benvenuti </h1>
+      <h2>CIAO</h2>
     
-        <button onclick="mostraImmagine()">clicca per immagine !!!!</button>  
+  <button onclick="toggleImmagine()">clicca per immagine !!!!</button>  
     
-        <img id="1" src="immagine1.png" alt="Immagine" width="300" style=display:none;>
+        <img id="img1" src="immagine1.png" alt="Immagine" width="300" style="display:none;">
 
-        <script>
-            function mostraImmagine() {
-              document.getElementById("1").style.display = "block";
-            }
-            </script>
+
 
 <form action="risposta.txt">
     inserisci quanto ti è piaciuta l'immagine : <input type="text" name="fname"><br><br>
